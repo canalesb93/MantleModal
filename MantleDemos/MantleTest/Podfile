@@ -4,6 +4,6 @@
 use_frameworks!
 
 target 'MantleTest' do
-  pod 'MantleModal'
+  pod 'MantleModal', :git => 'https://github.com/canalesb93/MantleModal.git'
 end
 

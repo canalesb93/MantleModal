@@ -45,6 +45,7 @@ class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIScrollVi
     
     // Creates the ScrollView and the ContentView (UIView), don't move
     func createMantleViewController() {
+        view.backgroundColor = UIColor.clearColor()
         scrollView = UIScrollView()
         scrollView.backgroundColor = UIColor.clearColor()
         view.addSubview(scrollView)
@@ -95,15 +96,9 @@ class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIScrollVi
         contentViewConstraint = computedContentViewConstraint
         view.addConstraint(contentViewConstraint)
         
-
-//        addToScrollViewNewController(glassViewController)
-        
-        print("NANI, \(scrollView.frame.height)")
-//        moveToView(1)
     }
     
     override func viewDidAppear(animated: Bool) {
-        print("MOVE TO VIEW, \(scrollView.frame.height)")
         moveToView(1)
     }
     
@@ -147,7 +142,6 @@ class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIScrollVi
     }
     
     func scrollViewWillBeginDecelerating(scrollView: UIScrollView) {
-        print(scrollView.contentOffset.y)
         if(scrollView.contentOffset.y < view.frame.height-20){
             scrollView.scrollEnabled = false
         }
@@ -155,7 +149,6 @@ class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIScrollVi
     
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         let currentPage = floor(scrollView.contentOffset.y / scrollView.bounds.size.height + 0.5);
-        print("DRAGGED TO: \(currentPage)")
         if(currentPage == 0){
             dismissView(false)
         } else {

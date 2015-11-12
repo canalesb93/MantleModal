@@ -16,13 +16,18 @@ class ViewController: UIViewController {
     }
     
     @IBAction func presentModal(sender: AnyObject) {
-        let mantleViewController = storyboard!.instantiateViewControllerWithIdentifier("MantleViewController") as! RCMantleViewController
         
-        // Adding all the controllers you want in the scrollView
+        // Create the MantleViewController from the Storyboard using the ID
+        let mantleViewController = storyboard!.instantiateViewControllerWithIdentifier("MantleViewController") as! RCMantleViewController
+        // Create your modal controller
         let popUpViewController = storyboard!.instantiateViewControllerWithIdentifier("PopUpViewController") as! RCPopUpViewController
+        // Set it's delegate to be able to call 'delegate.dismissView(animated: Bool)'
         popUpViewController.delegate = mantleViewController
+        // Initialize Mantle
         mantleViewController.setUpScrollView()
+        // Add your modal to Mantle
         mantleViewController.addToScrollViewNewController(popUpViewController)
+        // Present the modal through the MantleViewController
         self.presentViewController(mantleViewController, animated: false, completion: nil)
     }
 

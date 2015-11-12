@@ -16,7 +16,7 @@ Drag the file named `RCMantleViewController.swift` into your project.
 Setup is faily simple, but I have plans to make it even easier later.
 ### Step 1
 Add a new ViewControler into your storyboard and set the **Class** to `RCMantleViewController` and the **Storyboard ID** to `MantleViewController`.
-![image](http://imgur.com/bWINRWy.png =250x)
+<img src="http://imgur.com/bWINRWy.png" width="250">
 ### Step 2
 Add your own view into your storyboard which will represent the modal. Also set a unique **Storyboard ID** to it.
 ![image](http://imgur.com/R3P0fN4.png)

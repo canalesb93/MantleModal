@@ -13,7 +13,6 @@
 		0A80B33E1BF4361B00967C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A80B33D1BF4361B00967C91 /* Assets.xcassets */; };
 		0A80B3411BF4361B00967C91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A80B33F1BF4361B00967C91 /* LaunchScreen.storyboard */; };
 		0A80B3491BF4399300967C91 /* RCMantleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80B3481BF4399300967C91 /* RCMantleViewController.swift */; };
-		0A80B34B1BF43ACD00967C91 /* RCGlassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80B34A1BF43ACD00967C91 /* RCGlassViewController.swift */; };
 		0A80B34D1BF43AE200967C91 /* RCPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80B34C1BF43AE200967C91 /* RCPopUpViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +25,6 @@
 		0A80B3401BF4361B00967C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A80B3421BF4361B00967C91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A80B3481BF4399300967C91 /* RCMantleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCMantleViewController.swift; sourceTree = "<group>"; };
-		0A80B34A1BF43ACD00967C91 /* RCGlassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCGlassViewController.swift; sourceTree = "<group>"; };
 		0A80B34C1BF43AE200967C91 /* RCPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCPopUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,7 +65,6 @@
 				0A80B33F1BF4361B00967C91 /* LaunchScreen.storyboard */,
 				0A80B3421BF4361B00967C91 /* Info.plist */,
 				0A80B3481BF4399300967C91 /* RCMantleViewController.swift */,
-				0A80B34A1BF43ACD00967C91 /* RCGlassViewController.swift */,
 				0A80B34C1BF43AE200967C91 /* RCPopUpViewController.swift */,
 			);
 			path = Mantle;
@@ -144,7 +141,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A80B34B1BF43ACD00967C91 /* RCGlassViewController.swift in Sources */,
 				0A80B3491BF4399300967C91 /* RCMantleViewController.swift in Sources */,
 				0A80B3391BF4361B00967C91 /* ViewController.swift in Sources */,
 				0A80B34D1BF43AE200967C91 /* RCPopUpViewController.swift in Sources */,

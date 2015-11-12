@@ -29,7 +29,7 @@
                                 <animations/>
                                 <state key="normal" title="Deploy"/>
                                 <connections>
-                                    <segue destination="UlL-yq-ysg" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="coverVertical" id="dQy-4H-7fB"/>
+                                    <action selector="presentModal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b8x-HQ-spr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -40,55 +40,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="328.5" y="322.5"/>
         </scene>
         <!--Mantle View Controller-->
-        <scene sceneID="A3Y-DB-XfI">
+        <scene sceneID="a7I-bF-MiZ">
             <objects>
-                <viewController id="UlL-yq-ysg" customClass="RCMantleViewController" customModule="Mantle" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MantleViewController" id="mhe-th-gX3" customClass="RCMantleViewController" customModule="Mantle" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="voY-jC-YLV"/>
-                        <viewControllerLayoutGuide type="bottom" id="BGE-iz-jXW"/>
+                        <viewControllerLayoutGuide type="top" id="Uc9-3k-MOg"/>
+                        <viewControllerLayoutGuide type="bottom" id="ih5-J9-quA"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="2Nu-l8-rV9">
+                    <view key="view" contentMode="scaleToFill" id="GwW-Vb-7h1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Utu-p5-iyI">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d31-LL-qem">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
-                                        <animations/>
-                                    </view>
-                                </subviews>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstItem="d31-LL-qem" firstAttribute="leading" secondItem="Utu-p5-iyI" secondAttribute="leading" id="AZS-3T-Qwb"/>
-                                    <constraint firstItem="d31-LL-qem" firstAttribute="top" secondItem="Utu-p5-iyI" secondAttribute="top" id="CZf-eC-YFM"/>
-                                    <constraint firstAttribute="bottom" secondItem="d31-LL-qem" secondAttribute="bottom" id="EhF-ue-jTZ"/>
-                                    <constraint firstItem="d31-LL-qem" firstAttribute="width" secondItem="Utu-p5-iyI" secondAttribute="width" id="VhG-ot-FaO"/>
-                                    <constraint firstAttribute="trailing" secondItem="d31-LL-qem" secondAttribute="trailing" id="fj0-BT-kkl"/>
-                                    <constraint firstItem="d31-LL-qem" firstAttribute="height" secondItem="Utu-p5-iyI" secondAttribute="height" placeholder="YES" id="pZR-oX-jKR"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
                         <animations/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Utu-p5-iyI" secondAttribute="trailing" id="5wG-ID-6C9"/>
-                            <constraint firstItem="Utu-p5-iyI" firstAttribute="leading" secondItem="2Nu-l8-rV9" secondAttribute="leading" id="MrE-gk-Nh1"/>
-                            <constraint firstItem="BGE-iz-jXW" firstAttribute="top" secondItem="Utu-p5-iyI" secondAttribute="bottom" id="rNI-Kw-rbc"/>
-                            <constraint firstItem="Utu-p5-iyI" firstAttribute="top" secondItem="voY-jC-YLV" secondAttribute="bottom" id="yJS-f1-4QZ"/>
-                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="contentView" destination="d31-LL-qem" id="iv2-1I-WdO"/>
-                        <outlet property="scrollView" destination="Utu-p5-iyI" id="MoR-bE-Zvv"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="spS-cX-B7N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xId-3R-WEs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="848.5" y="387.5"/>
+            <point key="canvasLocation" x="894.5" y="322.5"/>
         </scene>
         <!--Pop Up View Controller-->
         <scene sceneID="p6G-91-H0X">
@@ -125,26 +96,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rYW-w1-NoH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1540.5" y="856.5"/>
-        </scene>
-        <!--Glass View Controller-->
-        <scene sceneID="fA2-ee-3BH">
-            <objects>
-                <viewController storyboardIdentifier="GlassViewController" id="tXQ-PR-UQD" customClass="RCGlassViewController" customModule="Mantle" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="IsO-Pd-hWd"/>
-                        <viewControllerLayoutGuide type="bottom" id="zYO-k6-udS"/>
-                    </layoutGuides>
-                    <view key="view" alpha="0.5" contentMode="scaleToFill" id="ngW-cO-nDQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cIa-Ho-KF5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1535" y="-14"/>
+            <point key="canvasLocation" x="1390.5" y="322.5"/>
         </scene>
     </scenes>
 </document>

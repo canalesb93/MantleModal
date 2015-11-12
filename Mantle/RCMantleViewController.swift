@@ -19,27 +19,75 @@ protocol RCMantleViewDelegate {
 
 class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIScrollViewDelegate {
     
-    @IBOutlet var scrollView: UIScrollView!
-    @IBOutlet var contentView: UIView!
+    var scrollView: UIScrollView!
+    var contentView: UIView!
     
     // A strong reference to the height contraint of the contentView
     var contentViewConstraint: NSLayoutConstraint!
 
     // A computed version of this reference
     var computedContentViewConstraint: NSLayoutConstraint {
-        return NSLayoutConstraint(item: contentView, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: scrollView, attribute: .Height, multiplier: CGFloat(controllers.count + 1), constant: 0)
+        return NSLayoutConstraint(item: contentView, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: scrollView, attribute: .Height, multiplier: CGFloat(controllers.count + 2), constant: 0)
     }
     
     // The list of controllers currently present in the scrollView
     var controllers = [UIViewController]()
     
+    func setUpScrollView(){
+        self.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
+        createMantleViewController()
+        initScrollView()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        initScrollView()
+    }
+    
+    // Creates the ScrollView and the ContentView (UIView), don't move
+    func createMantleViewController() {
+        scrollView = UIScrollView()
+        scrollView.backgroundColor = UIColor.clearColor()
+        view.addSubview(scrollView)
         
+        let top = NSLayoutConstraint(item: scrollView, attribute: .Top, relatedBy: .Equal, toItem: view, attribute: .Top, multiplier: 1.0, constant: 0)
+        let bottom = NSLayoutConstraint(item: scrollView, attribute: .Bottom, relatedBy: .Equal, toItem: view, attribute: .Bottom, multiplier: 1.0, constant: 0)
+        let leading = NSLayoutConstraint(item: scrollView, attribute: .Leading, relatedBy: .Equal, toItem: view, attribute: .Leading, multiplier: 1.0, constant: 0)
+        let trailing = NSLayoutConstraint(item: scrollView, attribute: .Trailing, relatedBy: .Equal, toItem: view, attribute: .Trailing, multiplier: 1.0, constant: 0)
+        
+        
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        
+        contentView = UIView()
+        contentView.backgroundColor = UIColor.clearColor()
+        contentView.translatesAutoresizingMaskIntoConstraints = false
+        scrollView.addSubview(contentView)
+        
+        let ctop = NSLayoutConstraint(item: contentView, attribute: .Top, relatedBy: .Equal, toItem: scrollView, attribute: .Top, multiplier: 1.0, constant: 0)
+        let cbottom = NSLayoutConstraint(item: contentView, attribute: .Bottom, relatedBy: .Equal, toItem: scrollView, attribute: .Bottom, multiplier: 1.0, constant: 0)
+        let cleading = NSLayoutConstraint(item: contentView, attribute: .Leading, relatedBy: .Equal, toItem: scrollView, attribute: .Leading, multiplier: 1.0, constant: 0)
+        let ctrailing = NSLayoutConstraint(item: contentView, attribute: .Trailing, relatedBy: .Equal, toItem: scrollView, attribute: .Trailing, multiplier: 1.0, constant: 0)
+        let cwidth = NSLayoutConstraint(item: contentView, attribute: .Width, relatedBy: .Equal, toItem: scrollView, attribute: .Width, multiplier: 1.0, constant: 0)
+        
+        let glassView = UIView()
+        glassView.backgroundColor = UIColor.clearColor()
+        glassView.translatesAutoresizingMaskIntoConstraints = false
+        contentView.addSubview(glassView)
+
+        let gheight = NSLayoutConstraint(item: glassView, attribute: .Height, relatedBy: .Equal, toItem: scrollView, attribute: .Height, multiplier: 1.0, constant: 0)
+        
+        let gleading = NSLayoutConstraint(item: contentView, attribute: .Leading, relatedBy: .Equal, toItem: glassView, attribute: .Leading, multiplier: 1.0, constant: 0)
+        let gtrailing = NSLayoutConstraint(item: contentView, attribute: .Trailing, relatedBy: .Equal, toItem: glassView, attribute: .Trailing, multiplier: 1.0, constant: 0)
+        
+            // Since it's the first one, the trailing constraint is from the controller view to the contentView
+        let gbottom = NSLayoutConstraint(item: contentView, attribute: .Bottom, relatedBy: .Equal, toItem: glassView, attribute: .Bottom, multiplier: 1.0, constant: 0)
+        
+        
+        NSLayoutConstraint.activateConstraints([top, bottom, leading, trailing, ctop, cbottom, cleading, ctrailing, cwidth, gheight, gleading, gtrailing, gbottom])
     }
 
     func initScrollView(){
+        scrollView.pagingEnabled = true
+        scrollView.showsVerticalScrollIndicator = false
         scrollView.delegate = self
 
         contentView.translatesAutoresizingMaskIntoConstraints = false
@@ -47,14 +95,15 @@ class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIScrollVi
         contentViewConstraint = computedContentViewConstraint
         view.addConstraint(contentViewConstraint)
         
-        // Adding all the controllers you want in the scrollView
-        let popUpViewController = storyboard!.instantiateViewControllerWithIdentifier("PopUpViewController") as! RCPopUpViewController
-        let glassViewController = storyboard!.instantiateViewControllerWithIdentifier("GlassViewController") as! RCGlassViewController
-        popUpViewController.delegate = self  
+
+//        addToScrollViewNewController(glassViewController)
         
-        addToScrollViewNewController(popUpViewController)
-        addToScrollViewNewController(glassViewController)
+        print("NANI, \(scrollView.frame.height)")
+//        moveToView(1)
+    }
     
+    override func viewDidAppear(animated: Bool) {
+        print("MOVE TO VIEW, \(scrollView.frame.height)")
         moveToView(1)
     }
     
@@ -116,7 +165,7 @@ class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIScrollVi
     
     func moveToView(viewNum: Int) {
         // Determine the offset in the scroll view we need to move to
-        let yPos: CGFloat = (self.view.frame.height - 20) * CGFloat(viewNum)
+        let yPos: CGFloat = (self.view.frame.height) * CGFloat(viewNum)
         self.scrollView.setContentOffset(CGPointMake(0,yPos), animated: true)
     }
     

@@ -7,8 +7,26 @@ A simple modal resource that uses a UIScrollView to allow the user to close the 
 ![](http://imgur.com/tZr1ns4.gif)
 
 ## Install Instructions
-#### CocoaPod
-*Pending...*
+#### CocoaPods
+MantleModal is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+use_frameworks!
+
+target 'MantleTest' do
+  pod 'MantleModal'
+end
+```
+
+Then, run `pod install`
+
+In case you haven't installed CocoaPods yet, run the following command
+
+```ruby
+$ gem install cocoapods
+```
+
 #### Manual
 Drag the file named `RCMantleViewController.swift` into your project.
 

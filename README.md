@@ -1,13 +1,12 @@
 # Mantle Modal
 Made by Ricardo Canales
-___
 ## Description
 A simple modal resource that uses a UIScrollView to allow the user to close the modal by dragging it down.
 
 <div align="center"><img src="http://imgur.com/tZr1ns4.gif" width=300></div>
 
 ## Install Instructions
----
+
 #### CocoaPods
 MantleModal is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
@@ -32,7 +31,7 @@ $ gem install cocoapods
 Drag the file named `RCMantleViewController.swift` into your project.
 
 ## Usage
----
+
 Setup is faily simple, but I have plans to make it even easier later.
 ### Step 1
 Add a new ViewControler into your storyboard and set the **Class** to `RCMantleViewController` and the **Storyboard ID** to `MantleViewController`.
@@ -79,7 +78,7 @@ And then dismiss the modal using this:
 
 
 ## Credits
----
+
 Mostly done by myself - **Ricardo Canales**
 
 Initial code inspired by this [StackOverflow](http://stackoverflow.com/questions/24687140/snapchat-like-swipe-navigation-between-views-in-xcode-6-and-swift) post.

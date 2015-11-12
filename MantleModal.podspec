@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 
-  s.name         = "Mantle"
+  s.name         = "MantleModal"
   s.version      = "0.0.1"
   s.summary      = "A simple modal closable by dragging."                   
 

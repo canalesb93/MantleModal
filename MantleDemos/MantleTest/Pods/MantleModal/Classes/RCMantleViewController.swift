@@ -17,7 +17,7 @@ protocol RCMantleViewDelegate {
     func dismissView(animated: Bool)
 }
 
-class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIScrollViewDelegate {
+public class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIScrollViewDelegate {
     
     var scrollView: UIScrollView!
     var contentView: UIView!
@@ -33,13 +33,13 @@ class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIScrollVi
     // The list of controllers currently present in the scrollView
     var controllers = [UIViewController]()
     
-    func setUpScrollView(){
+    public func setUpScrollView(){
         self.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
         createMantleViewController()
         initScrollView()
     }
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
     }
     
@@ -98,11 +98,11 @@ class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIScrollVi
         
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override public func viewDidAppear(animated: Bool) {
         moveToView(1)
     }
     
-    func addToScrollViewNewController(controller: UIViewController) {
+    public func addToScrollViewNewController(controller: UIViewController) {
         controller.willMoveToParentViewController(self)
         
         contentView.addSubview(controller.view)
@@ -141,13 +141,13 @@ class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIScrollVi
         controllers.append(controller)
     }
     
-    func scrollViewWillBeginDecelerating(scrollView: UIScrollView) {
+    public func scrollViewWillBeginDecelerating(scrollView: UIScrollView) {
         if(scrollView.contentOffset.y < view.frame.height-20){
             scrollView.scrollEnabled = false
         }
     }
     
-    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+    public func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         let currentPage = floor(scrollView.contentOffset.y / scrollView.bounds.size.height + 0.5);
         if(currentPage == 0){
             dismissView(false)
@@ -166,7 +166,7 @@ class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIScrollVi
         self.dismissViewControllerAnimated(animated, completion: nil)
     }
     
-    override func didReceiveMemoryWarning() {
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }

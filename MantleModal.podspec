@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "MantleModal"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "A simple modal closable by dragging."                   
   s.description      = <<-DESC
                         A simple modal resource that uses a UIScrollView to allow the user to close the modal by dragging it down.

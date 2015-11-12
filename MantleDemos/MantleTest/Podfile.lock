@@ -1,0 +1,10 @@
+PODS:
+  - MantleModal (0.0.1)
+
+DEPENDENCIES:
+  - MantleModal
+
+SPEC CHECKSUMS:
+  MantleModal: f9c6d387ed385f9257278595e2e75bedbb225f02
+
+COCOAPODS: 0.39.0

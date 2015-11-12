@@ -24,7 +24,7 @@ public class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIS
     
     // A strong reference to the height contraint of the contentView
     var contentViewConstraint: NSLayoutConstraint!
-
+    
     // A computed version of this reference
     var computedContentViewConstraint: NSLayoutConstraint {
         return NSLayoutConstraint(item: contentView, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: scrollView, attribute: .Height, multiplier: CGFloat(controllers.count + 2), constant: 0)
@@ -73,24 +73,24 @@ public class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIS
         glassView.backgroundColor = UIColor.clearColor()
         glassView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(glassView)
-
+        
         let gheight = NSLayoutConstraint(item: glassView, attribute: .Height, relatedBy: .Equal, toItem: scrollView, attribute: .Height, multiplier: 1.0, constant: 0)
         
         let gleading = NSLayoutConstraint(item: contentView, attribute: .Leading, relatedBy: .Equal, toItem: glassView, attribute: .Leading, multiplier: 1.0, constant: 0)
         let gtrailing = NSLayoutConstraint(item: contentView, attribute: .Trailing, relatedBy: .Equal, toItem: glassView, attribute: .Trailing, multiplier: 1.0, constant: 0)
         
-            // Since it's the first one, the trailing constraint is from the controller view to the contentView
+        // Since it's the first one, the trailing constraint is from the controller view to the contentView
         let gbottom = NSLayoutConstraint(item: contentView, attribute: .Bottom, relatedBy: .Equal, toItem: glassView, attribute: .Bottom, multiplier: 1.0, constant: 0)
         
         
         NSLayoutConstraint.activateConstraints([top, bottom, leading, trailing, ctop, cbottom, cleading, ctrailing, cwidth, gheight, gleading, gtrailing, gbottom])
     }
-
+    
     func initScrollView(){
         scrollView.pagingEnabled = true
         scrollView.showsVerticalScrollIndicator = false
         scrollView.delegate = self
-
+        
         contentView.translatesAutoresizingMaskIntoConstraints = false
         
         contentViewConstraint = computedContentViewConstraint
@@ -113,7 +113,7 @@ public class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIS
         
         let leadingConstraint = NSLayoutConstraint(item: contentView, attribute: .Leading, relatedBy: .Equal, toItem: controller.view, attribute: .Leading, multiplier: 1.0, constant: 0)
         let trailingConstraint = NSLayoutConstraint(item: contentView, attribute: .Trailing, relatedBy: .Equal, toItem: controller.view, attribute: .Trailing, multiplier: 1.0, constant: 0)
-    
+        
         // Setting all the constraints
         var bottomConstraint: NSLayoutConstraint!
         if controllers.isEmpty {

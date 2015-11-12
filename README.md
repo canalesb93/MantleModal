@@ -45,14 +45,14 @@ Add your own view into your storyboard which will represent the modal. Also set 
 
 
 ### Step 3 
-Activate the modal like this.
+Activate the modal like this in your parent controller.
 ```swift
     @IBAction func presentModal(sender: AnyObject) {
         
         // Create the MantleViewController from the Storyboard using the ID
         let mantleViewController = storyboard!.instantiateViewControllerWithIdentifier("MantleViewController") as! RCMantleViewController
-        // Create your modal controller
-        let popUpViewController = storyboard!.instantiateViewControllerWithIdentifier("PopUpViewController") as! RCPopUpViewController
+        // Create your modal controller with your storyboard ID
+        let popUpViewController = storyboard!.instantiateViewControllerWithIdentifier("YourUniqueStoryboardID") as! RCPopUpViewController
         // Set it's delegate to be able to call 'delegate.dismissView(animated: Bool)'
         popUpViewController.delegate = mantleViewController
         // Initialize Mantle
@@ -64,11 +64,11 @@ Activate the modal like this.
     }
 ```
 ### Step 4
-In your modals controller set 
+In your modal's controller set 
 ```swift
     var delegate: RCMantleViewDelegate!
 ```
-And then dismiss the modal with:
+And then dismiss the modal using this:
 ```swift
     delegate.dismissView(true)
 ```

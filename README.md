@@ -76,6 +76,18 @@ And then dismiss the modal using this:
   delegate.dismissView(true)
 ```
 
+## Options
+The current configuration available includes:
+```swift
+  // Allows you to dismiss the view by dragging up
+  mantleViewController.bottomDismissible = true // default = false
+  // Makes the view present from the top
+  mantleViewController.appearFromTop = true // // default = false
+```
+You can also access the ScrollView and modify its options, just make sure you do it after calling `mantleViewController.setUpScrollView()`
+```swift
+  mantleViewController.scrollView.bounces = false
+```
 
 ## Credits
 

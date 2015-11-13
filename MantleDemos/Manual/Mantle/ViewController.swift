@@ -25,8 +25,9 @@ class ViewController: UIViewController {
         popUpViewController.delegate = mantleViewController
         // Initialize Mantle
         mantleViewController.bottomDismissible = true
-        mantleViewController.appearFromTop = true
+        mantleViewController.appearFromTop = false
         mantleViewController.setUpScrollView()
+        mantleViewController.scrollView.bounces = false
         // Add your modal to Mantle
         mantleViewController.addToScrollViewNewController(popUpViewController)
         // Present the modal through the MantleViewController

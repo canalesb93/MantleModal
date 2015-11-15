@@ -1,7 +1,7 @@
 # Mantle Modal
-Draggable Modal, PopUp or Menu
+Draggable Modal, PopUp or Menu written in Swift.
 ## Description
-A simple modal resource that uses a UIScrollView to allow the user to close the modal by dragging it down.
+A simple modal resource that uses a UIScrollView to allow the user to close the view by removing it from the screen.
 
 <div align="center">
 <img src="http://imgur.com/0qsFWtS.gif" width=31%>
@@ -87,7 +87,7 @@ And then dismiss the modal using this:
   delegate.dismissView(true)
 ```
 
-## Options
+## Configuration
 MantleModal currently includes some configuration which you must call before `mantleViewController.setUpScrollView()`.
 The current configuration available includes:
 
@@ -115,9 +115,18 @@ You can also access the ScrollView and modify its options, just make sure you do
   mantleViewController.scrollView.bounces = false
 ```
 
+## How it works
+The view you are actually presenting is actually a `UIScrollView` with a larger `UIView` inside that contains your own view along with extra empty space that is fully created by `RCMantleViewController`. `RCMantleViewController` will then detect when your view is no longer centered in the ScrollView and dismiss the complete view. It does not use native modal animations and uses the `UIScrollView`'s *scroll to content* animation.
+
+## Pending
+* Orientation change support.
+* More...
+
 ## Credits
 
 Mostly done by myself - **Ricardo Canales**
+
+I am still have many things to learn about iOS development so any suggestions and contributions are welcome.
 
 Initial code inspired by this [StackOverflow](http://stackoverflow.com/questions/24687140/snapchat-like-swipe-navigation-between-views-in-xcode-6-and-swift) post.
 Credit to [lbrendanl](https://github.com/lbrendanl) and [Poql](http://stackoverflow.com/users/3857555/poql)

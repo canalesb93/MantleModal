@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -79,8 +80,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GTa-M0-kC3">
-                                <rect key="frame" x="66" y="203" width="242" height="262"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GTa-M0-kC3">
+                                <rect key="frame" x="62" y="203" width="250" height="262"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I'm a real popup!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGD-5A-GI9">
                                         <rect key="frame" x="34" y="23" width="176" height="49"/>
@@ -102,6 +103,12 @@
                             </view>
                         </subviews>
                         <animations/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="GTa-M0-kC3" secondAttribute="trailing" constant="47" id="ERn-IC-dox"/>
+                            <constraint firstItem="GTa-M0-kC3" firstAttribute="top" secondItem="y0R-7W-SBI" secondAttribute="bottom" constant="183" id="btx-ZM-Q5O"/>
+                            <constraint firstItem="GTa-M0-kC3" firstAttribute="leading" secondItem="ILF-Yu-Mvm" secondAttribute="leadingMargin" constant="46" id="hQd-av-rQs"/>
+                            <constraint firstItem="KgI-QP-yWd" firstAttribute="top" secondItem="GTa-M0-kC3" secondAttribute="bottom" constant="202" id="sOf-s2-jad"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>

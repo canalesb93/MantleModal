@@ -26,6 +26,7 @@ class ViewController: UIViewController {
         
         // Configuration
         mantleViewController.bottomDismissible = true
+        mantleViewController.topDismissable = true
         mantleViewController.draggableToSides = true
         mantleViewController.appearFromTop = true
         

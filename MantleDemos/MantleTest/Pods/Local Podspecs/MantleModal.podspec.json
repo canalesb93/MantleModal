@@ -1,6 +1,6 @@
 {
   "name": "MantleModal",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "summary": "A simple modal closable by dragging.",
   "description": "A simple modal resource that uses a UIScrollView to allow the user to close the modal by dragging it down.",
   "homepage": "https://github.com/canalesb93/MantleModal",
@@ -16,7 +16,7 @@
   },
   "source": {
     "git": "https://github.com/canalesb93/MantleModal.git",
-    "tag": "0.0.3"
+    "tag": "0.0.5"
   },
   "source_files": [
     "Classes",

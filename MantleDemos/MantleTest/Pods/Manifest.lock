@@ -1,19 +1,14 @@
 PODS:
-  - MantleModal (0.0.3)
+  - MantleModal (0.0.5)
 
 DEPENDENCIES:
-  - MantleModal (from `https://github.com/canalesb93/MantleModal.git`)
+  - MantleModal (from `~/Workspace/Projects/Mantle/`)
 
 EXTERNAL SOURCES:
   MantleModal:
-    :git: https://github.com/canalesb93/MantleModal.git
-
-CHECKOUT OPTIONS:
-  MantleModal:
-    :commit: 07e7a2592b0a154d4b39325a95a7a0781865e97d
-    :git: https://github.com/canalesb93/MantleModal.git
+    :path: "~/Workspace/Projects/Mantle/"
 
 SPEC CHECKSUMS:
-  MantleModal: 82c2cc0898e4445abf55f0040e1148eeb2aaa753
+  MantleModal: d5e0fafc3b89c1908f113b9c88b684a01e147345
 
 COCOAPODS: 0.39.0

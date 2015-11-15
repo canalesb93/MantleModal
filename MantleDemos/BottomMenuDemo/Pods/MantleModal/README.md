@@ -3,11 +3,7 @@ Draggable Modal, PopUp or Menu
 ## Description
 A simple modal resource that uses a UIScrollView to allow the user to close the modal by dragging it down.
 
-<div align="center">
-<img src="http://imgur.com/0qsFWtS.gif" width=31%>
-<img src="http://imgur.com/nMrH0Mv.gif" width=31%>
-<img src="http://imgur.com/9PS7BUo.gif" width=31%>
-</div>
+<div align="center"><img src="http://imgur.com/tZr1ns4.gif" width=300></div>
 
 ## Install Instructions
 
@@ -40,7 +36,7 @@ Setup is faily simple, but I have plans to make it even easier later.
 ### Step 1
 Add a new View Controler into your storyboard and set the **Class** to `RCMantleViewController` and the **Storyboard ID** to `MantleViewController`.
 
-<div align="center"><img src="http://imgur.com/PEwQ2dA.png" width=300></div>
+<div align="center"><img src="http://imgur.com/bWINRWy.png" width=300></div>
 ### Step 2
 Add your own view into your storyboard which will represent the modal. Also set a unique **Storyboard ID** to it.
 <div align="center"><img src="http://imgur.com/R3P0fN4.png"></div>

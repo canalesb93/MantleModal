@@ -4,6 +4,6 @@
 use_frameworks!
 
 target 'BottomMenuDemo' do
-  pod 'MantleModal', :path => '~/Workspace/Projects/Mantle/'
+  pod 'MantleModal'
 end
 

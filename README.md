@@ -1,5 +1,5 @@
 # Mantle Modal
-Made by Ricardo Canales
+Draggable Modal, PopUp or Menu
 ## Description
 A simple modal resource that uses a UIScrollView to allow the user to close the modal by dragging it down.
 
@@ -34,14 +34,13 @@ Drag the file named `RCMantleViewController.swift` into your project.
 
 Setup is faily simple, but I have plans to make it even easier later.
 ### Step 1
-Add a new ViewControler into your storyboard and set the **Class** to `RCMantleViewController` and the **Storyboard ID** to `MantleViewController`.
+Add a new View Controler into your storyboard and set the **Class** to `RCMantleViewController` and the **Storyboard ID** to `MantleViewController`.
 
 <div align="center"><img src="http://imgur.com/bWINRWy.png" width=300></div>
 ### Step 2
 Add your own view into your storyboard which will represent the modal. Also set a unique **Storyboard ID** to it.
 <div align="center"><img src="http://imgur.com/R3P0fN4.png"></div>
-
-
+If you are gonna use a PopUp set the background view color transparent.
 
 ### Step 3 
 Import the module to your parent controller(if your using CocoaPods)
@@ -67,24 +66,47 @@ Activate the modal like this in your parent controller.
   self.presentViewController(mantleViewController, animated: false, completion: nil)
 ```
 ### Step 4
-In your modal's controller set 
+In your modal's controller also import:
+
+```swift
+  import MantleModal
+```
+
+Then define your delegate helper.
+
 ```swift
   var delegate: RCMantleViewDelegate!
 ```
 And then dismiss the modal using this:
+
 ```swift
   delegate.dismissView(true)
 ```
 
 ## Options
+MantleModal currently includes some configuration which you must call before `mantleViewController.setUpScrollView()`.
 The current configuration available includes:
+
 ```swift
+
   // Allows you to dismiss the view by dragging up
-  mantleViewController.bottomDismissible = true // default = false
-  // Makes the view present from the top
+  mantleViewController.bottomDismissible = false
+  // Allows you to dismiss the view by dragging down
+  mantleViewController.topDismissable = true
+  // Allows you to drag to the sides to close
+  mantleViewController.draggableToSides = false
+
+  // 'appearOffset' moves the menu closer to the edge so that it appears quicker
+  mantleViewController.appearOffset = CGFloat(290)
+  // '290' could be the distance between the top of the popup and the top of the screen 
+  
+  // Makes the view present from the top, can be set multiple times before presenting
+  // Also makes it hide to the top.
   mantleViewController.appearFromTop = true // // default = false
 ```
+
 You can also access the ScrollView and modify its options, just make sure you do it after calling `mantleViewController.setUpScrollView()`
+
 ```swift
   mantleViewController.scrollView.bounces = false
 ```

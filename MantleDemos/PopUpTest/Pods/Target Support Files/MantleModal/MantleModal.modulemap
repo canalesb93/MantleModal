@@ -1,0 +1,6 @@
+framework module MantleModal {
+  umbrella header "MantleModal-umbrella.h"
+
+  export *
+  module * { export * }
+}

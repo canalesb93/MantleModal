@@ -23,6 +23,12 @@ class ViewController: UIViewController {
         let popUpViewController = storyboard!.instantiateViewControllerWithIdentifier("PopUpViewController") as UIViewController
         // Set it's delegate to be able to call 'delegate.dismissView(animated: Bool)'
         // popUpViewController.delegate = mantleViewController
+        
+        // Configuration
+        mantleViewController.bottomDismissible = true
+        mantleViewController.draggableToSides = true
+        mantleViewController.appearFromTop = true
+        
         // Initialize Mantle
         mantleViewController.setUpScrollView()
         // Add your modal to Mantle

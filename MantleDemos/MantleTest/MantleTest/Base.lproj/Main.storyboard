@@ -24,10 +24,15 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZG2-04-rq0">
-                                <rect key="frame" x="164" y="335" width="46" height="30"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="wWT-Gy-ghw">
+                                <rect key="frame" x="177" y="420" width="20" height="20"/>
                                 <animations/>
-                                <state key="normal" title="Button"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZG2-04-rq0">
+                                <rect key="frame" x="120" y="306" width="135" height="55"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Show PopUp"/>
                                 <connections>
                                     <action selector="presentModal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TsG-j6-YDB"/>
                                 </connections>
@@ -40,6 +45,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="324.5" y="372.5"/>
         </scene>
         <!--Mantle View Controller-->
         <scene sceneID="1vk-ve-w29">

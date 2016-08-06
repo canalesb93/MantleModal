@@ -1,5 +1,5 @@
 PODS:
-  - MantleModal (1.0.0)
+  - MantleModal (1.0.1)
 
 DEPENDENCIES:
   - MantleModal (from `~/Workspace/Projects/Mantle/`)
@@ -9,6 +9,8 @@ EXTERNAL SOURCES:
     :path: "~/Workspace/Projects/Mantle/"
 
 SPEC CHECKSUMS:
-  MantleModal: 9e19fdda2703017a2e37b7952b78db3e5ab15fe1
+  MantleModal: 6bf416784511ebd07bc5561c926854af685d5d3c
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 7850da9571c5d1fd2108b66a67586701de0a6d20
+
+COCOAPODS: 1.0.1

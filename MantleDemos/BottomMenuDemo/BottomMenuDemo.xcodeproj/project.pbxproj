@@ -13,7 +13,7 @@
 		0ABCDE861BF82FC0006DE2CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ABCDE851BF82FC0006DE2CE /* Assets.xcassets */; };
 		0ABCDE891BF82FC0006DE2CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ABCDE871BF82FC0006DE2CE /* LaunchScreen.storyboard */; };
 		0ABCDE911BF833C6006DE2CE /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABCDE901BF833C6006DE2CE /* ModalViewController.swift */; };
-		0C7DAA742166EAEE4E8F04FF /* Pods_BottomMenuDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD1CFF64C47AF6E3DE111F4 /* Pods_BottomMenuDemo.framework */; };
+		85FF2C716C0B879E27CD3CC4 /* Pods_BottomMenuDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EB1D830A039EAF0CC35E591 /* Pods_BottomMenuDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +25,9 @@
 		0ABCDE881BF82FC0006DE2CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0ABCDE8A1BF82FC0006DE2CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0ABCDE901BF833C6006DE2CE /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
-		2E1A0444BECCD8D881520031 /* Pods-BottomMenuDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BottomMenuDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BottomMenuDemo/Pods-BottomMenuDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		2FD1CFF64C47AF6E3DE111F4 /* Pods_BottomMenuDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BottomMenuDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0DE74D9000DFB77C3C72CE2 /* Pods-BottomMenuDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BottomMenuDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BottomMenuDemo/Pods-BottomMenuDemo.release.xcconfig"; sourceTree = "<group>"; };
+		7EB1D830A039EAF0CC35E591 /* Pods_BottomMenuDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BottomMenuDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98BE9C1BF5398E9FC670CCCD /* Pods-BottomMenuDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BottomMenuDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BottomMenuDemo/Pods-BottomMenuDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		FDC4BF75678B6DF05913DA0E /* Pods-BottomMenuDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BottomMenuDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BottomMenuDemo/Pods-BottomMenuDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C7DAA742166EAEE4E8F04FF /* Pods_BottomMenuDemo.framework in Frameworks */,
+				85FF2C716C0B879E27CD3CC4 /* Pods_BottomMenuDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,8 +47,8 @@
 			children = (
 				0ABCDE7D1BF82FC0006DE2CE /* BottomMenuDemo */,
 				0ABCDE7C1BF82FC0006DE2CE /* Products */,
-				DAC725385E2C971B262D9168 /* Pods */,
-				A31F80444A99A4776FA38B26 /* Frameworks */,
+				447487EE78EFD4AD7E3C5F4D /* Pods */,
+				E70AC0DA0DD9724F9D179593 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,21 +74,21 @@
 			path = BottomMenuDemo;
 			sourceTree = "<group>";
 		};
-		A31F80444A99A4776FA38B26 /* Frameworks */ = {
+		447487EE78EFD4AD7E3C5F4D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2FD1CFF64C47AF6E3DE111F4 /* Pods_BottomMenuDemo.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DAC725385E2C971B262D9168 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2E1A0444BECCD8D881520031 /* Pods-BottomMenuDemo.debug.xcconfig */,
-				E0DE74D9000DFB77C3C72CE2 /* Pods-BottomMenuDemo.release.xcconfig */,
+				98BE9C1BF5398E9FC670CCCD /* Pods-BottomMenuDemo.debug.xcconfig */,
+				FDC4BF75678B6DF05913DA0E /* Pods-BottomMenuDemo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E70AC0DA0DD9724F9D179593 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EB1D830A039EAF0CC35E591 /* Pods_BottomMenuDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,12 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0ABCDE8D1BF82FC0006DE2CE /* Build configuration list for PBXNativeTarget "BottomMenuDemo" */;
 			buildPhases = (
-				EBB7F28AD844537D12D18281 /* Check Pods Manifest.lock */,
+				9B445CAD99B7A1D489BE93BE /* [CP] Check Pods Manifest.lock */,
 				0ABCDE771BF82FC0006DE2CE /* Sources */,
 				0ABCDE781BF82FC0006DE2CE /* Frameworks */,
 				0ABCDE791BF82FC0006DE2CE /* Resources */,
-				83C29A4ED09BB5C267EFAB94 /* Embed Pods Frameworks */,
-				E8BA451D8798E806D930A98E /* Copy Pods Resources */,
+				805B3DA3BA17AD609EFF3A64 /* [CP] Embed Pods Frameworks */,
+				71F3B06BAA79EF8A2525F741 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -161,29 +161,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		83C29A4ED09BB5C267EFAB94 /* Embed Pods Frameworks */ = {
+		71F3B06BAA79EF8A2525F741 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BottomMenuDemo/Pods-BottomMenuDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E8BA451D8798E806D930A98E /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,14 +176,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BottomMenuDemo/Pods-BottomMenuDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EBB7F28AD844537D12D18281 /* Check Pods Manifest.lock */ = {
+		805B3DA3BA17AD609EFF3A64 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BottomMenuDemo/Pods-BottomMenuDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B445CAD99B7A1D489BE93BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,7 +324,7 @@
 		};
 		0ABCDE8E1BF82FC0006DE2CE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E1A0444BECCD8D881520031 /* Pods-BottomMenuDemo.debug.xcconfig */;
+			baseConfigurationReference = 98BE9C1BF5398E9FC670CCCD /* Pods-BottomMenuDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BottomMenuDemo/Info.plist;
@@ -336,7 +336,7 @@
 		};
 		0ABCDE8F1BF82FC0006DE2CE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E0DE74D9000DFB77C3C72CE2 /* Pods-BottomMenuDemo.release.xcconfig */;
+			baseConfigurationReference = FDC4BF75678B6DF05913DA0E /* Pods-BottomMenuDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BottomMenuDemo/Info.plist;

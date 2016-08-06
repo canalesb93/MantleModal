@@ -13,7 +13,7 @@
 		0A45C0611BF48DFE002FB903 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A45C0601BF48DFE002FB903 /* Assets.xcassets */; };
 		0A45C0641BF48DFE002FB903 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A45C0621BF48DFE002FB903 /* LaunchScreen.storyboard */; };
 		0ABCDE931BF848D7006DE2CE /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABCDE921BF848D7006DE2CE /* PopUpViewController.swift */; };
-		4E658A8EA9CFF0410B501F36 /* Pods_MantleTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64BC3E9CEA621273A44EB1B3 /* Pods_MantleTest.framework */; };
+		46994B463B27C1B90A0F7E09 /* Pods_MantleTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829DFA4D099EB2745273E13B /* Pods_MantleTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +25,9 @@
 		0A45C0631BF48DFE002FB903 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A45C0651BF48DFE002FB903 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0ABCDE921BF848D7006DE2CE /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
-		5C070D5940FD47139F14F8BC /* Pods-MantleTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MantleTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MantleTest/Pods-MantleTest.debug.xcconfig"; sourceTree = "<group>"; };
-		64BC3E9CEA621273A44EB1B3 /* Pods_MantleTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MantleTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF2031A0930DC7FD491C54C1 /* Pods-MantleTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MantleTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-MantleTest/Pods-MantleTest.release.xcconfig"; sourceTree = "<group>"; };
+		112F764A2C3672121E683541 /* Pods-MantleTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MantleTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MantleTest/Pods-MantleTest.debug.xcconfig"; sourceTree = "<group>"; };
+		543F0D40C124AD90E1DD2563 /* Pods-MantleTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MantleTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-MantleTest/Pods-MantleTest.release.xcconfig"; sourceTree = "<group>"; };
+		829DFA4D099EB2745273E13B /* Pods_MantleTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MantleTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E658A8EA9CFF0410B501F36 /* Pods_MantleTest.framework in Frameworks */,
+				46994B463B27C1B90A0F7E09 /* Pods_MantleTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,8 +47,8 @@
 			children = (
 				0A45C0581BF48DFE002FB903 /* MantleTest */,
 				0A45C0571BF48DFE002FB903 /* Products */,
-				11BBABA3E8F87ACC9F39CC0E /* Pods */,
-				0C5D54D7815086B3D92F9CEC /* Frameworks */,
+				A2DA46D3273234283EFC4C38 /* Pods */,
+				65FE4CA0CB46C7F5B1AA043D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,19 +74,19 @@
 			path = MantleTest;
 			sourceTree = "<group>";
 		};
-		0C5D54D7815086B3D92F9CEC /* Frameworks */ = {
+		65FE4CA0CB46C7F5B1AA043D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				64BC3E9CEA621273A44EB1B3 /* Pods_MantleTest.framework */,
+				829DFA4D099EB2745273E13B /* Pods_MantleTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		11BBABA3E8F87ACC9F39CC0E /* Pods */ = {
+		A2DA46D3273234283EFC4C38 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5C070D5940FD47139F14F8BC /* Pods-MantleTest.debug.xcconfig */,
-				AF2031A0930DC7FD491C54C1 /* Pods-MantleTest.release.xcconfig */,
+				112F764A2C3672121E683541 /* Pods-MantleTest.debug.xcconfig */,
+				543F0D40C124AD90E1DD2563 /* Pods-MantleTest.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -98,12 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A45C0681BF48DFE002FB903 /* Build configuration list for PBXNativeTarget "MantleTest" */;
 			buildPhases = (
-				3D2F76BADC01581EB0A79DC6 /* Check Pods Manifest.lock */,
+				D35278DC9CDA7CC6F8470231 /* [CP] Check Pods Manifest.lock */,
 				0A45C0521BF48DFE002FB903 /* Sources */,
 				0A45C0531BF48DFE002FB903 /* Frameworks */,
 				0A45C0541BF48DFE002FB903 /* Resources */,
-				F7C75AF6CE63BE8E31B68532 /* Embed Pods Frameworks */,
-				7890EA9FD1C191815F01483C /* Copy Pods Resources */,
+				EF73C67117E02CE58B8B81F0 /* [CP] Embed Pods Frameworks */,
+				2C737866AAE1F4DEF2ABD4BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -161,29 +161,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3D2F76BADC01581EB0A79DC6 /* Check Pods Manifest.lock */ = {
+		2C737866AAE1F4DEF2ABD4BA /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		7890EA9FD1C191815F01483C /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,14 +176,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MantleTest/Pods-MantleTest-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F7C75AF6CE63BE8E31B68532 /* Embed Pods Frameworks */ = {
+		D35278DC9CDA7CC6F8470231 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EF73C67117E02CE58B8B81F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,7 +324,7 @@
 		};
 		0A45C0691BF48DFE002FB903 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C070D5940FD47139F14F8BC /* Pods-MantleTest.debug.xcconfig */;
+			baseConfigurationReference = 112F764A2C3672121E683541 /* Pods-MantleTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MantleTest/Info.plist;
@@ -336,7 +336,7 @@
 		};
 		0A45C06A1BF48DFE002FB903 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF2031A0930DC7FD491C54C1 /* Pods-MantleTest.release.xcconfig */;
+			baseConfigurationReference = 543F0D40C124AD90E1DD2563 /* Pods-MantleTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MantleTest/Info.plist;

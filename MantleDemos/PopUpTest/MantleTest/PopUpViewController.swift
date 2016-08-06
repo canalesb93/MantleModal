@@ -18,7 +18,7 @@ class PopUpViewController: UIViewController, UIGestureRecognizerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let tap = UITapGestureRecognizer(target: self, action: "tapDismiss:")
+        let tap = UITapGestureRecognizer(target: self, action: #selector(PopUpViewController.tapDismiss(_:)))
         tap.delegate = self
         self.view.addGestureRecognizer(tap)
     }

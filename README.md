@@ -5,8 +5,8 @@ A simple modal resource that uses a UIScrollView to allow the user to close the 
 
 <div align="center">
 <img src="http://imgur.com/0qsFWtS.gif" width=31%>
-<img src="http://imgur.com/nMrH0Mv.gif" width=31%>
-<img src="http://imgur.com/9PS7BUo.gif" width=31%>
+<img src="http://i.imgur.com/QXaRUF8.gif" width=31%>
+<img src="http://i.imgur.com/4QVNkgf.gifv" width=31%>
 </div>
 
 ## Install Instructions

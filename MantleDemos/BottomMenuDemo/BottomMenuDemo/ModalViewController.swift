@@ -16,7 +16,7 @@ class ModalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let tap = UITapGestureRecognizer(target: self, action: #selector(ModalViewController.tapDismiss(_:)))
+        let tap = UITapGestureRecognizer(target: self, action: #selector(ModalViewController.tapDismiss))
         self.view.addGestureRecognizer(tap)
     
         // Do any additional setup after loading the view.

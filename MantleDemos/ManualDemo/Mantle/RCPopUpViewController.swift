@@ -23,7 +23,7 @@ class RCPopUpViewController: UIViewController {
     }
     
     @IBAction func closeView(sender: AnyObject) {
-        delegate.dismissView(true)
+        delegate.dismissView(animated: true)
     }
 
     

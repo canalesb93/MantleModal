@@ -18,7 +18,7 @@ class PopUpViewController: UIViewController, UIGestureRecognizerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let tap = UITapGestureRecognizer(target: self, action: #selector(PopUpViewController.tapDismiss(_:)))
+        let tap = UITapGestureRecognizer(target: self, action: #selector(PopUpViewController.tapDismiss))
         tap.delegate = self
         self.view.addGestureRecognizer(tap)
     }
@@ -27,7 +27,7 @@ class PopUpViewController: UIViewController, UIGestureRecognizerDelegate {
         delegate.dismissView(true)
     }
     
-    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool {
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
         if touch.view == popUpView {
             return false
         }

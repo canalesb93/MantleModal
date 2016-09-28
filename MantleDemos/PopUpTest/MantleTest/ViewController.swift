@@ -18,9 +18,9 @@ class ViewController: UIViewController {
 
     @IBAction func presentModal(sender: AnyObject) {
         // Create the MantleViewController from the Storyboard using the
-        let mantleViewController = storyboard!.instantiateViewControllerWithIdentifier("MantleViewController") as! RCMantleViewController
+        let mantleViewController = storyboard!.instantiateViewController(withIdentifier: "MantleViewController") as! RCMantleViewController
         // Create your modal controller with your storyboard ID
-        let popUpViewController = storyboard!.instantiateViewControllerWithIdentifier("PopUpViewController") as! PopUpViewController
+        let popUpViewController = storyboard!.instantiateViewController(withIdentifier: "PopUpViewController") as! PopUpViewController
         // Set it's delegate to be able to call 'delegate.dismissView(animated: Bool)'
         popUpViewController.delegate = mantleViewController
         
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         // Add your modal to Mantle
         mantleViewController.addToScrollViewNewController(popUpViewController)
         // Present the modal through the MantleViewController
-        self.presentViewController(mantleViewController, animated: false, completion: nil)
+        self.present(mantleViewController, animated: false, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {

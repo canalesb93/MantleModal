@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03F3048AF2A3B0052E8CB2E4343FED0E /* RCMantleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60E727AE20B16B001DC9255F963EEF9 /* RCMantleViewController.swift */; };
+		03F3048AF2A3B0052E8CB2E4343FED0E /* RCMantleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BA5981B3E20D2659CFB552B0FB1D7E /* RCMantleViewController.swift */; };
 		10487BBF6231F6CA0E4317300A8B5107 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		39438B871EC4361575AD0A41A6447CD9 /* MantleModal-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F32CD16972845B475D4AF2B379B0481 /* MantleModal-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39438B871EC4361575AD0A41A6447CD9 /* MantleModal-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 17A4F4D9D3C7EFB76FC04F3B54937898 /* MantleModal-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BF806DBCA49CB99C31CA934634C8792 /* Pods-MantleTest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FA3CC310A8E9C1FBE6DAD43FA7B6DF9 /* Pods-MantleTest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C15ECA9A78AFBD6979C8C704BE632CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		6BD92F9FBB5F7819C6B3734AD9AA6FAB /* MantleModal-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4380EFEF554F83DE941FBB25F85588 /* MantleModal-dummy.m */; };
+		6BD92F9FBB5F7819C6B3734AD9AA6FAB /* MantleModal-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE07D3242F4655658B6CA798560BD522 /* MantleModal-dummy.m */; };
 		883A4C2F045C43BF650201C41491F00E /* Pods-MantleTest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9669CAAB386D4D603AB21CD88BDE4D /* Pods-MantleTest-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -27,26 +27,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07B6175389DA8FF6C171F49DE055FB03 /* MantleModal.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MantleModal.xcconfig; sourceTree = "<group>"; };
+		146CD13DC0874A0C6981C6E6476F3FE9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17A4F4D9D3C7EFB76FC04F3B54937898 /* MantleModal-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MantleModal-umbrella.h"; sourceTree = "<group>"; };
 		1DEA82E0020C3400DB4ADA602514F514 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28BA5981B3E20D2659CFB552B0FB1D7E /* RCMantleViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RCMantleViewController.swift; sourceTree = "<group>"; };
 		2F2A14DFAA60F836B5D7CAEFB6885404 /* Pods-MantleTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MantleTest.release.xcconfig"; sourceTree = "<group>"; };
 		3B9669CAAB386D4D603AB21CD88BDE4D /* Pods-MantleTest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MantleTest-dummy.m"; sourceTree = "<group>"; };
-		3F32CD16972845B475D4AF2B379B0481 /* MantleModal-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MantleModal-umbrella.h"; sourceTree = "<group>"; };
 		3FA3CC310A8E9C1FBE6DAD43FA7B6DF9 /* Pods-MantleTest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MantleTest-umbrella.h"; sourceTree = "<group>"; };
-		51CDE99202AEE0E0D4512EE990F4EC30 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CE3A5FD3886B61D04A4646B324C0E94 /* MantleModal-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MantleModal-prefix.pch"; sourceTree = "<group>"; };
+		51039C140D63A9E933666BF14FB64A5C /* MantleModal.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MantleModal.xcconfig; sourceTree = "<group>"; };
 		6AB89B7F2D7BB3CEBB7FF0E7309FF7E3 /* MantleModal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MantleModal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		981CA2FCDE6DB139B79BEA343EB52939 /* Pods-MantleTest-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MantleTest-frameworks.sh"; sourceTree = "<group>"; };
 		9AFAB6A0685C5988A5409B6C354904F2 /* Pods-MantleTest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MantleTest-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B31904DB6B2522F0C8F8BF0833A92D07 /* MantleModal.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MantleModal.modulemap; sourceTree = "<group>"; };
-		BB4380EFEF554F83DE941FBB25F85588 /* MantleModal-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MantleModal-dummy.m"; sourceTree = "<group>"; };
-		C094859EE39B97AC9CA276C6D0F4E0CA /* MantleModal-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MantleModal-prefix.pch"; sourceTree = "<group>"; };
+		9F42E9E7702AFA0EBF2AEF733DEBE12C /* MantleModal.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MantleModal.modulemap; sourceTree = "<group>"; };
+		BE07D3242F4655658B6CA798560BD522 /* MantleModal-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MantleModal-dummy.m"; sourceTree = "<group>"; };
 		C3AA15B99341A172029BBEF58D78018A /* Pods_MantleTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MantleTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5130022B95D458919F318AE6D9816C5 /* Pods-MantleTest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MantleTest-acknowledgements.plist"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DE8C1DF7835C4FB32E4E59A225C0770D /* Pods-MantleTest-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MantleTest-resources.sh"; sourceTree = "<group>"; };
 		E4D2D7D24DF3D3C0232526EF9D6E70D7 /* Pods-MantleTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MantleTest.debug.xcconfig"; sourceTree = "<group>"; };
-		E60E727AE20B16B001DC9255F963EEF9 /* RCMantleViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RCMantleViewController.swift; sourceTree = "<group>"; };
 		EE5DD1EA90D38D5CB5C93CF88E22BD48 /* Pods-MantleTest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MantleTest.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,15 +70,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		20B10389C3DBCC52E1489ACC5722EE09 /* Support Files */ = {
+		149836D86071E1E8E291DC38A064079D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				51CDE99202AEE0E0D4512EE990F4EC30 /* Info.plist */,
-				B31904DB6B2522F0C8F8BF0833A92D07 /* MantleModal.modulemap */,
-				07B6175389DA8FF6C171F49DE055FB03 /* MantleModal.xcconfig */,
-				BB4380EFEF554F83DE941FBB25F85588 /* MantleModal-dummy.m */,
-				C094859EE39B97AC9CA276C6D0F4E0CA /* MantleModal-prefix.pch */,
-				3F32CD16972845B475D4AF2B379B0481 /* MantleModal-umbrella.h */,
+				146CD13DC0874A0C6981C6E6476F3FE9 /* Info.plist */,
+				9F42E9E7702AFA0EBF2AEF733DEBE12C /* MantleModal.modulemap */,
+				51039C140D63A9E933666BF14FB64A5C /* MantleModal.xcconfig */,
+				BE07D3242F4655658B6CA798560BD522 /* MantleModal-dummy.m */,
+				4CE3A5FD3886B61D04A4646B324C0E94 /* MantleModal-prefix.pch */,
+				17A4F4D9D3C7EFB76FC04F3B54937898 /* MantleModal-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "MantleDemos/PopUpTest/Pods/Target Support Files/MantleModal";
@@ -92,29 +92,27 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		5A1A58ECFC709ABDFFFABD230EA9F50C /* MantleModal */ = {
+		448E0AFFF26F9E00FC4168330FF3347C /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9E3E4419A217A698E4EC7846CD2F7686 /* Classes */,
-				20B10389C3DBCC52E1489ACC5722EE09 /* Support Files */,
-			);
-			name = MantleModal;
-			path = /Users/Canales/Workspace/Projects/Mantle;
-			sourceTree = "<absolute>";
-		};
-		7097494B51194B652BA9C88DD8A5E828 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5A1A58ECFC709ABDFFFABD230EA9F50C /* MantleModal */,
+				E808AC7EADEBF4D8EB9E9AA4F9B93E5B /* MantleModal */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		53371C1471414F1F637CFFDC367B4FA4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				28BA5981B3E20D2659CFB552B0FB1D7E /* RCMantleViewController.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				7097494B51194B652BA9C88DD8A5E828 /* Development Pods */,
+				448E0AFFF26F9E00FC4168330FF3347C /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				A8200385D925496FAD52B044DA8C42E1 /* Products */,
 				8F66EEFD4ED4D51644D0F0315FAAA2C9 /* Targets Support Files */,
@@ -147,14 +145,6 @@
 			path = "Target Support Files/Pods-MantleTest";
 			sourceTree = "<group>";
 		};
-		9E3E4419A217A698E4EC7846CD2F7686 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				E60E727AE20B16B001DC9255F963EEF9 /* RCMantleViewController.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		A8200385D925496FAD52B044DA8C42E1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +160,16 @@
 				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E808AC7EADEBF4D8EB9E9AA4F9B93E5B /* MantleModal */ = {
+			isa = PBXGroup;
+			children = (
+				53371C1471414F1F637CFFDC367B4FA4 /* Classes */,
+				149836D86071E1E8E291DC38A064079D /* Support Files */,
+			);
+			name = MantleModal;
+			path = ../../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +237,14 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					5229D8F091D153F0D544AD702B85B646 = {
+						LastSwiftMigration = 0800;
+					};
+					AA324D882309950418C66ABF4BF5B1CD = {
+						LastSwiftMigration = 0800;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -286,26 +294,32 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		34A50185308DA856A882EC7EE8979A71 /* Release */ = {
+		122FAD136EF8CBDD8127BCD740A85088 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F2A14DFAA60F836B5D7CAEFB6885404 /* Pods-MantleTest.release.xcconfig */;
+			baseConfigurationReference = E4D2D7D24DF3D3C0232526EF9D6E70D7 /* Pods-MantleTest.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				INFOPLIST_FILE = "Target Support Files/Pods-MantleTest/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MantleTest/Pods-MantleTest.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -313,13 +327,51 @@
 				PRODUCT_NAME = Pods_MantleTest;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		169B5E16103EA5470680CABC03D5A9FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51039C140D63A9E933666BF14FB64A5C /* MantleModal.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREFIX_HEADER = "Target Support Files/MantleModal/MantleModal-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MantleModal/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MantleModal/MantleModal.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MantleModal;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		46EE69AF77A148AF92860F097B5698B1 /* Debug */ = {
+		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -337,6 +389,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -354,18 +407,23 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		5952CEF4619E8CF9F830ADFBCD165DC8 /* Debug */ = {
+		9AA04A6CB04F6C5F9B2D45AE1709165E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07B6175389DA8FF6C171F49DE055FB03 /* MantleModal.xcconfig */;
+			baseConfigurationReference = 51039C140D63A9E933666BF14FB64A5C /* MantleModal.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -373,7 +431,9 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREFIX_HEADER = "Target Support Files/MantleModal/MantleModal-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MantleModal/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -385,13 +445,14 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		7A156876A8824526ED495550DF098FA1 /* Release */ = {
+		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -409,6 +470,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -422,52 +484,23 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		ABA8436F8FA5DE8C317C53B919F61F36 /* Debug */ = {
+		E978C01F0A4B3ABD6CC1DD4D6B3ADE14 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4D2D7D24DF3D3C0232526EF9D6E70D7 /* Pods-MantleTest.debug.xcconfig */;
+			baseConfigurationReference = 2F2A14DFAA60F836B5D7CAEFB6885404 /* Pods-MantleTest.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MantleTest/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MantleTest/Pods-MantleTest.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MantleTest;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AFC0C55F267B9A1781B44417195C667B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07B6175389DA8FF6C171F49DE055FB03 /* MantleModal.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
@@ -475,17 +508,24 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MantleModal/MantleModal-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MantleModal/Info.plist";
+				GCC_OPTIMIZATION_LEVEL = 3;
+				INFOPLIST_FILE = "Target Support Files/Pods-MantleTest/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MantleModal/MantleModal.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MantleTest/Pods-MantleTest.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = MantleModal;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MantleTest;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -498,8 +538,8 @@
 		2BB1A44953561479FBFD40DB717CD8D0 /* Build configuration list for PBXNativeTarget "MantleModal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5952CEF4619E8CF9F830ADFBCD165DC8 /* Debug */,
-				AFC0C55F267B9A1781B44417195C667B /* Release */,
+				9AA04A6CB04F6C5F9B2D45AE1709165E /* Debug */,
+				169B5E16103EA5470680CABC03D5A9FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -507,8 +547,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46EE69AF77A148AF92860F097B5698B1 /* Debug */,
-				7A156876A8824526ED495550DF098FA1 /* Release */,
+				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
+				B7324857C38B065FEB1EEE3105C2367A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -516,8 +556,8 @@
 		BF9660C3E0D9C335D859D5F45EAD9339 /* Build configuration list for PBXNativeTarget "Pods-MantleTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ABA8436F8FA5DE8C317C53B919F61F36 /* Debug */,
-				34A50185308DA856A882EC7EE8979A71 /* Release */,
+				122FAD136EF8CBDD8127BCD740A85088 /* Debug */,
+				E978C01F0A4B3ABD6CC1DD4D6B3ADE14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

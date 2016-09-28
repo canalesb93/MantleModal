@@ -47,7 +47,7 @@ public class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIS
     
     // A computed version of this reference
     var computedContentViewConstraint: NSLayoutConstraint {
-        let constraint = NSLayoutConstraint(item: contentView, attribute: .Height, relatedBy: .Equal, toItem: scrollView, attribute: .Height, multiplier: CGFloat(controllers.count + glassScreens + 1), constant: 0)
+        let constraint = NSLayoutConstraint(item: contentView, attribute: .height, relatedBy: .equal, toItem: scrollView, attribute: .height, multiplier: CGFloat(controllers.count + glassScreens + 1), constant: 0)
         return constraint
     }
     
@@ -56,7 +56,7 @@ public class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIS
     
     // setup initialization
     public func setUpScrollView(){
-        self.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
+        self.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
         
         glassScreens = 1
         if bottomDismissible && topDismissable {
@@ -86,37 +86,37 @@ public class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIS
     
     // Creates the ScrollView and the ContentView (UIView), don't move
     private func createMantleViewController() {
-        view.backgroundColor = UIColor.clearColor()
+        view.backgroundColor = UIColor.clear
         scrollView = UIScrollView()
-        scrollView.backgroundColor = UIColor.clearColor()
+        scrollView.backgroundColor = UIColor.clear
         view.addSubview(scrollView)
         
-        let top = NSLayoutConstraint(item: scrollView, attribute: .Top, relatedBy: .Equal, toItem: view, attribute: .Top, multiplier: 1.0, constant: 0)
-        let bottom = NSLayoutConstraint(item: scrollView, attribute: .Bottom, relatedBy: .Equal, toItem: view, attribute: .Bottom, multiplier: 1.0, constant: 0)
-        let leading = NSLayoutConstraint(item: scrollView, attribute: .Leading, relatedBy: .Equal, toItem: view, attribute: .Leading, multiplier: 1.0, constant: 0)
-        let trailing = NSLayoutConstraint(item: scrollView, attribute: .Trailing, relatedBy: .Equal, toItem: view, attribute: .Trailing, multiplier: 1.0, constant: 0)
+        let top = NSLayoutConstraint(item: scrollView, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1.0, constant: 0)
+        let bottom = NSLayoutConstraint(item: scrollView, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1.0, constant: 0)
+        let leading = NSLayoutConstraint(item: scrollView, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1.0, constant: 0)
+        let trailing = NSLayoutConstraint(item: scrollView, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailing, multiplier: 1.0, constant: 0)
         
         
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         
         contentView = UIView()
-        contentView.backgroundColor = UIColor.clearColor()
+        contentView.backgroundColor = UIColor.clear
         contentView.translatesAutoresizingMaskIntoConstraints = false
         scrollView.addSubview(contentView)
         
-        let ctop = NSLayoutConstraint(item: contentView, attribute: .Top, relatedBy: .Equal, toItem: scrollView, attribute: .Top, multiplier: 1.0, constant: 0)
-        let cbottom = NSLayoutConstraint(item: contentView, attribute: .Bottom, relatedBy: .Equal, toItem: scrollView, attribute: .Bottom, multiplier: 1.0, constant: 0)
-        let cleading = NSLayoutConstraint(item: contentView, attribute: .Leading, relatedBy: .Equal, toItem: scrollView, attribute: .Leading, multiplier: 1.0, constant: 0)
-        let ctrailing = NSLayoutConstraint(item: contentView, attribute: .Trailing, relatedBy: .Equal, toItem: scrollView, attribute: .Trailing, multiplier: 1.0, constant: 0)
-        let cwidth = NSLayoutConstraint(item: contentView, attribute: .Width, relatedBy: .Equal, toItem: scrollView, attribute: .Width, multiplier: draggableMultiplier, constant: 0)
+        let ctop = NSLayoutConstraint(item: contentView, attribute: .top, relatedBy: .equal, toItem: scrollView, attribute: .top, multiplier: 1.0, constant: 0)
+        let cbottom = NSLayoutConstraint(item: contentView, attribute: .bottom, relatedBy: .equal, toItem: scrollView, attribute: .bottom, multiplier: 1.0, constant: 0)
+        let cleading = NSLayoutConstraint(item: contentView, attribute: .leading, relatedBy: .equal, toItem: scrollView, attribute: .leading, multiplier: 1.0, constant: 0)
+        let ctrailing = NSLayoutConstraint(item: contentView, attribute: .trailing, relatedBy: .equal, toItem: scrollView, attribute: .trailing, multiplier: 1.0, constant: 0)
+        let cwidth = NSLayoutConstraint(item: contentView, attribute: .width, relatedBy: .equal, toItem: scrollView, attribute: .width, multiplier: draggableMultiplier, constant: 0)
         
-        NSLayoutConstraint.activateConstraints([top, bottom, leading, trailing, ctop, cbottom, cleading, ctrailing, cwidth])
+        NSLayoutConstraint.activate([top, bottom, leading, trailing, ctop, cbottom, cleading, ctrailing, cwidth])
     }
     
     func initScrollView(){
-        scrollView.hidden = true
-        scrollView.scrollEnabled = false
-        scrollView.pagingEnabled = true
+        scrollView.isHidden = true
+        scrollView.isScrollEnabled = false
+        scrollView.isPagingEnabled = true
         scrollView.showsVerticalScrollIndicator = false
         scrollView.showsHorizontalScrollIndicator = false
         scrollView.delegate = self
@@ -128,10 +128,10 @@ public class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIS
         
     }
     
-    override public func viewDidAppear(animated: Bool) {
+    override public func viewDidAppear(_ animated: Bool) {
         accomodateScrollView()
-        scrollView.hidden = false
-        moveToView(mainView)
+        scrollView.isHidden = false
+        moveToView(viewNum: mainView)
     }
     
     private func accomodateScrollView(){
@@ -143,30 +143,30 @@ public class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIS
         if appearFromTop {
             yPos = self.contentView.frame.height - self.view.frame.height - appearOffset
         }
-        scrollView.setContentOffset(CGPointMake(xPos, yPos), animated: false)
+        scrollView.setContentOffset(CGPoint(x: xPos, y: yPos), animated: false)
     }
     
     public func addToScrollViewNewController(controller: UIViewController) {
-        controller.willMoveToParentViewController(self)
+        controller.willMove(toParentViewController: self)
         
         contentView.addSubview(controller.view)
         
         controller.view.translatesAutoresizingMaskIntoConstraints = false
         
-        let heightConstraint = NSLayoutConstraint(item: controller.view, attribute: .Height, relatedBy: .Equal, toItem: scrollView, attribute: .Height, multiplier: 1.0, constant: 0)
+        let heightConstraint = NSLayoutConstraint(item: controller.view, attribute: .height, relatedBy: .equal, toItem: scrollView, attribute: .height, multiplier: 1.0, constant: 0)
         
-        let leadingConstraint = NSLayoutConstraint(item: contentView, attribute: .Leading, relatedBy: .Equal, toItem: controller.view, attribute: .Leading, multiplier: 1.0, constant: -draggableWidth)
-        let trailingConstraint = NSLayoutConstraint(item: contentView, attribute: .Trailing, relatedBy: .Equal, toItem: controller.view, attribute: .Trailing, multiplier: 1.0, constant: draggableWidth)
+        let leadingConstraint = NSLayoutConstraint(item: contentView, attribute: .leading, relatedBy: .equal, toItem: controller.view, attribute: .leading, multiplier: 1.0, constant: -draggableWidth)
+        let trailingConstraint = NSLayoutConstraint(item: contentView, attribute: .trailing, relatedBy: .equal, toItem: controller.view, attribute: .trailing, multiplier: 1.0, constant: draggableWidth)
         
         // Setting all the constraints
         
         var bottomConstraint: NSLayoutConstraint!
         if controllers.isEmpty {
             // Since it's the first one, the trailing constraint is from the controller view to the contentView
-            bottomConstraint = NSLayoutConstraint(item: contentView, attribute: .Bottom, relatedBy: .Equal, toItem: controller.view, attribute: .Bottom, multiplier: 1.0, constant: 0)
+            bottomConstraint = NSLayoutConstraint(item: contentView, attribute: .bottom, relatedBy: .equal, toItem: controller.view, attribute: .bottom, multiplier: 1.0, constant: 0)
         }
         else {
-            bottomConstraint = NSLayoutConstraint(item: controllers.last!.view, attribute: .Top, relatedBy: .Equal, toItem: controller.view, attribute: .Bottom, multiplier: 1.0, constant: 0)
+            bottomConstraint = NSLayoutConstraint(item: controllers.last!.view, attribute: .top, relatedBy: .equal, toItem: controller.view, attribute: .bottom, multiplier: 1.0, constant: 0)
         }
         
         if bottomDismissible {
@@ -183,59 +183,59 @@ public class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIS
         scrollView.addConstraints([heightConstraint])
         
         self.addChildViewController(controller)
-        controller.didMoveToParentViewController(self)
+        controller.didMove(toParentViewController: self)
         
         // Finally adding the controller in the list of controllers
         controllers.append(controller)
     }
     
-    public func scrollViewWillBeginDecelerating(scrollView: UIScrollView) {
+    public func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
         if(scrollView.contentOffset.y < view.frame.height-20){
-            scrollView.scrollEnabled = false
+            scrollView.isScrollEnabled = false
         } else if scrollView.contentOffset.y > scrollView.frame.height - view.frame.height + 20 {
-            scrollView.scrollEnabled = false
+            scrollView.isScrollEnabled = false
         }
     }
     
     // close view or not
-    public func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let currentHorizontalPage = floor(scrollView.contentOffset.x / scrollView.bounds.size.width + 0.5);
         let currentPage = floor(scrollView.contentOffset.y / scrollView.bounds.size.height + 0.5);
         // let lastPage = floor(contentView.frame.height / scrollView.bounds.size.height - 1);
         
         if(draggableToSides && (currentHorizontalPage == 0 || currentHorizontalPage == 2)){
-            dismissView(false)
+            dismissView(animated: false)
         }
         
         if(Int(currentPage) != mainView){
-            dismissView(false)
+            dismissView(animated: false)
         } else {
-            scrollView.scrollEnabled = true
+            scrollView.isScrollEnabled = true
         }
     }
     
-    public func scrollViewDidEndScrollingAnimation(scrollView: UIScrollView) {
+    public func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
         let currentPage = floor(scrollView.contentOffset.y / scrollView.bounds.size.height + 0.5);
         if currentPage != CGFloat(mainView) {
-            dismissView(false)
+            dismissView(animated: false)
         } else {
-            scrollView.scrollEnabled = true
+            scrollView.isScrollEnabled = true
         }
     }
     
     private func moveToView(viewNum: Int) {
         // Determine the offset in the scroll view we need to move to
-        scrollView.scrollEnabled = false
+        scrollView.isScrollEnabled = false
         let yPos: CGFloat = (self.view.frame.height) * CGFloat(viewNum)
-        self.scrollView.setContentOffset(CGPointMake(self.scrollView.contentOffset.x ,yPos), animated: true)
+        self.scrollView.setContentOffset(CGPoint(x: self.scrollView.contentOffset.x , y: yPos), animated: true)
     }
     
     public func dismissView(animated: Bool){
         if appearFromTop && animated {
-            moveToView(mainView + 1)
+            moveToView(viewNum: mainView + 1)
             //self.dismissViewControllerAnimated(false, completion: nil)
         } else {
-            self.dismissViewControllerAnimated(animated, completion: nil)
+            self.dismiss(animated: animated, completion: nil)
         }
     }
     

@@ -1,23 +1,18 @@
-//
-//  RCMantleViewController.swift
-//  Mantle
-//
-//  Created by Ricardo Canales on 11/11/15.
-//  Copyright © 2015 canalesb. All rights reserved.
-//
-
+// MARK: IMPORT STATEMENT
 import UIKit
 
 
-// Declare this protocol outside the class
-public protocol RCMantleViewDelegate {
+// MARK: MANTLE VIEW DELEGATE - PROTOCOL
+public protocol MantleViewDelegate {
     // This method allows a child to tell the parent view controller
     // to change to a different child view
     func dismissView(animated: Bool)
 }
 
-public class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIScrollViewDelegate {
+// MARK: MANTLE VIEW CONTROLLER
+public class MantleViewController: UIViewController, MantleViewDelegate, UIScrollViewDelegate {
     
+    // MARK: PROPERTIES
     public var scrollView: UIScrollView!
     private var contentView: UIView!
     

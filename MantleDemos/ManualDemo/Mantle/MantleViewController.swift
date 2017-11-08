@@ -1,25 +1,20 @@
-//
-//  RCMantleViewController.swift
-//  Mantle
-//
-//  Created by Ricardo Canales on 11/11/15.
-//  Copyright © 2015 canalesb. All rights reserved.
-//
-
+// MARK: IMPORT STATEMENT
 import UIKit
 
 
-// Declare this protocol outside the class
-public protocol RCMantleViewDelegate {
+// MARK: MANTLE VIEW DELEGATE - PROTOCOL
+public protocol MantleViewDelegate {
     // This method allows a child to tell the parent view controller
     // to change to a different child view
-    func dismissView(_ animated: Bool)
+    func dismissView(animated: Bool)
 }
 
-open class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIScrollViewDelegate {
+// MARK: MANTLE VIEW CONTROLLER
+public class MantleViewController: UIViewController, MantleViewDelegate, UIScrollViewDelegate {
     
-    open var scrollView: UIScrollView!
-    fileprivate var contentView: UIView!
+    // MARK: PROPERTIES
+    public var scrollView: UIScrollView!
+    private var contentView: UIView!
     
     // A strong reference to the height contraint of the contentView
     var contentViewConstraint: NSLayoutConstraint!
@@ -27,21 +22,21 @@ open class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIScr
     // ==================== CONFIGURATION VARIABLES - START ====================
     
     // draggable to the top/bottom
-    open var bottomDismissible: Bool = false
-    open var topDismissable: Bool = true
+    public var bottomDismissible: Bool = false
+    public var topDismissable: Bool = true
     
-    fileprivate var mainView: Int = 1
+    private var mainView: Int = 1
     
     // show modal from the top
-    open var appearFromTop: Bool = false
-    open var appearOffset: CGFloat = 0
+    public var appearFromTop: Bool = false
+    public var appearOffset: CGFloat = 0
     
     // draggable to sides configuration variables
-    open var draggableToSides: Bool = false
-    fileprivate var draggableWidth: CGFloat = 0
-    fileprivate var draggableMultiplier: CGFloat = 1.0
+    public var draggableToSides: Bool = false
+    private var draggableWidth: CGFloat = 0
+    private var draggableMultiplier: CGFloat = 1.0
     
-    fileprivate var glassScreens: Int = 1 // 1 + 1
+    private var glassScreens: Int = 1 // 1 + 1
     
     // ===================== CONFIGURATION VARIABLES - END =====================
     
@@ -55,7 +50,7 @@ open class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIScr
     var controllers = [UIViewController]()
     
     // setup initialization
-    open func setUpScrollView(){
+    public func setUpScrollView(){
         self.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
         
         glassScreens = 1
@@ -80,12 +75,12 @@ open class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIScr
         initScrollView()
     }
     
-    override open func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
     }
     
     // Creates the ScrollView and the ContentView (UIView), don't move
-    fileprivate func createMantleViewController() {
+    private func createMantleViewController() {
         view.backgroundColor = UIColor.clear
         scrollView = UIScrollView()
         scrollView.backgroundColor = UIColor.clear
@@ -128,13 +123,13 @@ open class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIScr
         
     }
     
-    override open func viewDidAppear(_ animated: Bool) {
+    override public func viewDidAppear(_ animated: Bool) {
         accomodateScrollView()
         scrollView.isHidden = false
-        moveToView(mainView)
+        moveToView(viewNum: mainView)
     }
     
-    fileprivate func accomodateScrollView(){
+    private func accomodateScrollView(){
         var xPos: CGFloat = 0
         var yPos: CGFloat = appearOffset
         if draggableToSides {
@@ -146,7 +141,7 @@ open class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIScr
         scrollView.setContentOffset(CGPoint(x: xPos, y: yPos), animated: false)
     }
     
-    open func addToScrollViewNewController(_ controller: UIViewController) {
+    public func addToScrollViewNewController(controller: UIViewController) {
         controller.willMove(toParentViewController: self)
         
         contentView.addSubview(controller.view)
@@ -189,7 +184,7 @@ open class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIScr
         controllers.append(controller)
     }
     
-    open func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
+    public func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
         if(scrollView.contentOffset.y < view.frame.height-20){
             scrollView.isScrollEnabled = false
         } else if scrollView.contentOffset.y > scrollView.frame.height - view.frame.height + 20 {
@@ -198,48 +193,48 @@ open class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIScr
     }
     
     // close view or not
-    open func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let currentHorizontalPage = floor(scrollView.contentOffset.x / scrollView.bounds.size.width + 0.5);
         let currentPage = floor(scrollView.contentOffset.y / scrollView.bounds.size.height + 0.5);
         // let lastPage = floor(contentView.frame.height / scrollView.bounds.size.height - 1);
         
         if(draggableToSides && (currentHorizontalPage == 0 || currentHorizontalPage == 2)){
-            dismissView(false)
+            dismissView(animated: false)
         }
         
         if(Int(currentPage) != mainView){
-            dismissView(false)
+            dismissView(animated: false)
         } else {
             scrollView.isScrollEnabled = true
         }
     }
     
-    open func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+    public func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
         let currentPage = floor(scrollView.contentOffset.y / scrollView.bounds.size.height + 0.5);
         if currentPage != CGFloat(mainView) {
-            dismissView(false)
+            dismissView(animated: false)
         } else {
             scrollView.isScrollEnabled = true
         }
     }
     
-    fileprivate func moveToView(_ viewNum: Int) {
+    private func moveToView(viewNum: Int) {
         // Determine the offset in the scroll view we need to move to
         scrollView.isScrollEnabled = false
         let yPos: CGFloat = (self.view.frame.height) * CGFloat(viewNum)
-        self.scrollView.setContentOffset(CGPoint(x: self.scrollView.contentOffset.x ,y: yPos), animated: true)
+        self.scrollView.setContentOffset(CGPoint(x: self.scrollView.contentOffset.x , y: yPos), animated: true)
     }
     
-    open func dismissView(_ animated: Bool){
+    public func dismissView(animated: Bool){
         if appearFromTop && animated {
-            moveToView(mainView + 1)
+            moveToView(viewNum: mainView + 1)
             //self.dismissViewControllerAnimated(false, completion: nil)
         } else {
             self.dismiss(animated: animated, completion: nil)
         }
     }
     
-    override open func didReceiveMemoryWarning() {
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }

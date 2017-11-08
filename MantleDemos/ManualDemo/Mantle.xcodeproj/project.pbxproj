@@ -12,8 +12,8 @@
 		0A80B33C1BF4361B00967C91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A80B33A1BF4361B00967C91 /* Main.storyboard */; };
 		0A80B33E1BF4361B00967C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A80B33D1BF4361B00967C91 /* Assets.xcassets */; };
 		0A80B3411BF4361B00967C91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A80B33F1BF4361B00967C91 /* LaunchScreen.storyboard */; };
-		0A80B3491BF4399300967C91 /* RCMantleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80B3481BF4399300967C91 /* RCMantleViewController.swift */; };
-		0A80B34D1BF43AE200967C91 /* RCPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80B34C1BF43AE200967C91 /* RCPopUpViewController.swift */; };
+		0A80B3491BF4399300967C91 /* MantleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80B3481BF4399300967C91 /* MantleViewController.swift */; };
+		0A80B34D1BF43AE200967C91 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80B34C1BF43AE200967C91 /* PopUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +24,8 @@
 		0A80B33D1BF4361B00967C91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A80B3401BF4361B00967C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A80B3421BF4361B00967C91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A80B3481BF4399300967C91 /* RCMantleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCMantleViewController.swift; sourceTree = "<group>"; };
-		0A80B34C1BF43AE200967C91 /* RCPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCPopUpViewController.swift; sourceTree = "<group>"; };
+		0A80B3481BF4399300967C91 /* MantleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MantleViewController.swift; sourceTree = "<group>"; };
+		0A80B34C1BF43AE200967C91 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +64,8 @@
 				0A80B33D1BF4361B00967C91 /* Assets.xcassets */,
 				0A80B33F1BF4361B00967C91 /* LaunchScreen.storyboard */,
 				0A80B3421BF4361B00967C91 /* Info.plist */,
-				0A80B3481BF4399300967C91 /* RCMantleViewController.swift */,
-				0A80B34C1BF43AE200967C91 /* RCPopUpViewController.swift */,
+				0A80B3481BF4399300967C91 /* MantleViewController.swift */,
+				0A80B34C1BF43AE200967C91 /* PopUpViewController.swift */,
 			);
 			path = Mantle;
 			sourceTree = "<group>";
@@ -97,13 +97,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = canalesb;
 				TargetAttributes = {
 					0A80B3321BF4361B00967C91 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = VGM45RH5LU;
-						LastSwiftMigration = 0800;
+						DevelopmentTeam = Z3UM9FW8JQ;
+						LastSwiftMigration = 0910;
 					};
 				};
 			};
@@ -143,9 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A80B3491BF4399300967C91 /* RCMantleViewController.swift in Sources */,
+				0A80B3491BF4399300967C91 /* MantleViewController.swift in Sources */,
 				0A80B3391BF4361B00967C91 /* ViewController.swift in Sources */,
-				0A80B34D1BF43AE200967C91 /* RCPopUpViewController.swift in Sources */,
+				0A80B34D1BF43AE200967C91 /* PopUpViewController.swift in Sources */,
 				0A80B3371BF4361B00967C91 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,14 +180,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -226,14 +232,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -262,13 +274,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VGM45RH5LU;
+				DEVELOPMENT_TEAM = Z3UM9FW8JQ;
 				INFOPLIST_FILE = Mantle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.canalesb.Mantle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -276,13 +289,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VGM45RH5LU;
+				DEVELOPMENT_TEAM = Z3UM9FW8JQ;
 				INFOPLIST_FILE = Mantle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.canalesb.Mantle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

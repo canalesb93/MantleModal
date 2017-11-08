@@ -18,9 +18,9 @@ class ViewController: UIViewController {
     @IBAction func presentModal(sender: AnyObject) {
         
         // Create the MantleViewController from the Storyboard using the ID
-        let mantleViewController = storyboard!.instantiateViewController(withIdentifier: "MantleViewController") as! RCMantleViewController
+        let mantleViewController = storyboard!.instantiateViewController(withIdentifier: "MantleViewController") as! MantleViewController
         // Create your modal controller
-        let popUpViewController = storyboard!.instantiateViewController(withIdentifier: "PopUpViewController") as! RCPopUpViewController
+        let popUpViewController = storyboard!.instantiateViewController(withIdentifier: "PopUpViewController") as! PopUpViewController
         // Set it's delegate to be able to call 'delegate.dismissView(animated: Bool)'
         popUpViewController.delegate = mantleViewController
         // Initialize Mantle

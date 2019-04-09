@@ -23,7 +23,7 @@ class PopUpViewController: UIViewController, UIGestureRecognizerDelegate {
         self.view.addGestureRecognizer(tap)
     }
     
-    func tapDismiss(sender:UITapGestureRecognizer){
+    @objc func tapDismiss(sender:UITapGestureRecognizer){
         delegate.dismissView(true)
     }
     

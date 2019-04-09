@@ -22,7 +22,7 @@ class ModalViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    func tapDismiss(sender:UITapGestureRecognizer){
+    @objc func tapDismiss(sender:UITapGestureRecognizer){
         delegate.dismissView(true)
     }
 

@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 // Declare this protocol outside the class
 public protocol RCMantleViewDelegate {
     // This method allows a child to tell the parent view controller
@@ -147,7 +146,7 @@ open class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIScr
     }
     
     open func addToScrollViewNewController(_ controller: UIViewController) {
-        controller.willMove(toParentViewController: self)
+        controller.willMove(toParent: self)
         
         contentView.addSubview(controller.view)
         
@@ -182,8 +181,8 @@ open class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIScr
         contentView.addConstraints([bottomConstraint, trailingConstraint, leadingConstraint])
         scrollView.addConstraints([heightConstraint])
         
-        self.addChildViewController(controller)
-        controller.didMove(toParentViewController: self)
+        self.addChild(controller)
+        controller.didMove(toParent: self)
         
         // Finally adding the controller in the list of controllers
         controllers.append(controller)

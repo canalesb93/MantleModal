@@ -147,7 +147,7 @@ public class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIS
     }
     
     public func addToScrollViewNewController(controller: UIViewController) {
-        controller.willMove(toParentViewController: self)
+        controller.willMove(toParent: self)
         
         contentView.addSubview(controller.view)
         
@@ -182,8 +182,8 @@ public class RCMantleViewController: UIViewController, RCMantleViewDelegate, UIS
         contentView.addConstraints([bottomConstraint, trailingConstraint, leadingConstraint])
         scrollView.addConstraints([heightConstraint])
         
-        self.addChildViewController(controller)
-        controller.didMove(toParentViewController: self)
+        self.addChild(controller)
+        controller.didMove(toParent: self)
         
         // Finally adding the controller in the list of controllers
         controllers.append(controller)
